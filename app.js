@@ -12,16 +12,16 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'home.html'));
 });
 
-// Routes for other pages
-app.get('/locations', (req, res) => {
+// Routes for other pages with exact paths
+app.get('/locations.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'locations.html'));
 });
 
-app.get('/menu', (req, res) => {
+app.get('/menu.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'menu.html'));
 });
 
-app.get('/ourteam', (req, res) => {
+app.get('/ourteam.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'ourteam.html'));
 });
 
