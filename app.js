@@ -4,15 +4,14 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Serve static files from the assets directory
-app.use('/assets/navbarlogo', express.static(path.join(__dirname, 'pages/assets/navbarlogo')));
-app.use('/assets/ourteamimages', express.static(path.join(__dirname, 'pages/assets/ourteamimages')));
+app.use('/assets', express.static(path.join(__dirname, 'pages/assets')));
 
 // Define route for your homepage
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'home.html'));
 });
 
-// Routes for other pages with exact paths
+// Other routes
 app.get('/locations.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'locations.html'));
 });
