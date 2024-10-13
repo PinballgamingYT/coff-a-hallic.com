@@ -10,6 +10,7 @@ app.use('/assets/ourteamimages', express.static(path.join(__dirname, 'pages/asse
 // Define route for your homepage
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'home.html'));
+});
 
 // Routes for other pages with exact paths
 app.get('/locations.html', (req, res) => {
