@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'home.html'));
 });
 
-// Other routes for pages
+// Routes for other pages
 app.get('/locations', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'locations.html'));
 });
