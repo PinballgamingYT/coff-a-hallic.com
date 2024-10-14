@@ -24,6 +24,10 @@ app.get('/ourteam.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'ourteam.html'));
 });
 
+app.get('/ourteam.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'sitemap.xml'));
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
