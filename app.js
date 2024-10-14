@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 
 // Serve static files from the assets directory
 app.use('/assets', express.static(path.join(__dirname, 'pages/assets')));
+app.use(express.static(path.join(__dirname, 'pages'))); // Serve static files from the pages directory
 
 // Define route for your homepage
 app.get('/', (req, res) => {
@@ -15,16 +16,13 @@ app.get('/', (req, res) => {
 app.get('/locations.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'locations.html'));
 });
-
 app.get('/menu.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'menu.html'));
 });
-
 app.get('/ourteam.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'ourteam.html'));
 });
-
-app.get('/ourteam.html', (req, res) => {
+app.get('/sitemap.xml', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'sitemap.xml'));
 });
 
