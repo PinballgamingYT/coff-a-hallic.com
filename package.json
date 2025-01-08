@@ -1,5 +1,5 @@
 {
-  "name": "example-expressjs",
+  "name": "coff-a-hallic.com",
   "version": "1.0.0",
   "description": "<div align=\"center\">   <a href=\"https://koyeb.com\">     <img src=\"https://www.koyeb.com/static/images/icons/koyeb.svg\" alt=\"Logo\" width=\"80\" height=\"80\">   </a>   <h3 align=\"center\">Koyeb Serverless Platform</h3>   <p align=\"center\">     Deploy a _FIXME_APP_TYPE_ application on Koyeb     <br />     <a href=\"https://koyeb.com\">Learn more about Koyeb</a>     ·     <a href=\"https://koyeb.com/docs\">Explore the documentation</a>     ·     <a href=\"https://koyeb.com/tutorials\">Discover our tutorials</a>   </p> </div>",
   "main": "index.js",
